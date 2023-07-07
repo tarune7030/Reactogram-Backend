@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 const PostModel = mongoose.model("PostModel");
-const protectedRoute = require("../middleware/proctectedResource");
+const protectedRoute = require("../middleware/protectedResource");
 
 //all users posts
 router.get("/allposts", (req, res) => {
